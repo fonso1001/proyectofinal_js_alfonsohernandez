@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramienta de inversion</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inversiones Duran</h1>
+        <label for="monto">Monto a Invertir:</label>
+        <input id="monto" type="number">
+        <label for="perfil">Perfil de Inversionista:</label>
+        <select id="perfil">
+            <option value="conservador">Conservador</option>
+            <option value="moderado">Moderado</option>
+            <option value="agresivo">Agresivo</option>
+        </select>
+        <label for="plazo">Plazo de inversion:</label>
+        <select id="plazo">
+            <option value="1">1 Año</option>
+            <option value="3">3 Años</option>
+            <option value="5">5 Años</option>
+        </select>
+        <label for="miembro">Miembro del Club:</label>
+        <select id="miembro">
+            <option value="SI">Si</option>
+            <option value="NO">No</option>
+        </select>
+        <button id="submit">Calcular</button>
+        <label for="moneda">Moneda:</label>
+        <select id="moneda">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="MXN">MXN</option>
+        </select>
+        <h2>Resultado:</h2>
+        <div id="results">
+            <p id="textoResultado"></p>
+        </div>
+        <div id="mensajeInversion"></div>
+        <button id="showInversions">Mostrar Inversiones Calculadas</button>
+        <button id="hideInversions" style="display:none;">Esconder</button>
+        <div id="pastInversions"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <script src="inversion.js"></script>
+</body>
+</html>

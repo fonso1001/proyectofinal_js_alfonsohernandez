@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid navy;
+    background-color: #f1f1f1;
+}
+
+button {
+    margin-top: 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+h1, h2 {
+    text-align: center;
+}
